@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><title>Palette Walk</title>
+    <style>body{margin:0;background:#f6f3e9;color:#24392f;font:17px/1.5 system-ui,sans-serif}
+    main{max-width:1080px;margin:auto;padding:36px}h1{font-size:52px;line-height:1.1;margin:12px 0}
+    .badge,.meta{font-size:13px;letter-spacing:.04em}.intro{max-width:710px;font-size:20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
+    section{background:#fff;border:1px solid #d4d9cf;border-radius:16px;padding:20px}
+    .swatch{height:80px;border-radius:8px;border:1px solid #ddd}.sketch{height:150px;border:1px dashed #a7b5a4;
+    border-radius:8px;margin:22px 0;color:#73816f;padding:12px;font-size:14px}h2{font-size:23px}
+    button{background:#244c36;color:white;border:0;border-radius:8px;padding:12px 18px;font:inherit;cursor:pointer}
+    footer{font-size:13px;max-width:900px;border-top:1px solid #ccd3c6;padding-top:18px}
+    @media(max-width:700px){main{padding:20px}.grid{grid-template-columns:1fr}h1{font-size:40px}}
+    @media print{body{background:white}main{padding:0}button{display:none}section{break-inside:avoid}.grid{gap:10px}}
+    </style><main><div class="badge">PALETTE WALK · Synthetic illustration demo</div>
+    <h1>A little color. A closer look.</h1><p class="intro">Print this card, put your screen away,
+    and take a short observation break in an outdoor place you already know.</p>
+    <p>Use the colors as loose prompts. Leave plants and wildlife undisturbed; stay on permitted paths.</p>
+    <button onclick="window.print()">Print my observation card</button><div class="grid"><section><div class="swatch" style="background:#8fbacb"></div>
+        <p class="meta">a blue-green shade · #8fbacb</p>
+        <h2>1. Look closer</h2><p>Notice a texture close to this color. Sketch its pattern.</p>
+        <div class="sketch">Sketch or write here</div><label><input type="checkbox"> I noticed something new</label></section><section><div class="swatch" style="background:#507349"></div>
+        <p class="meta">a green shade · #507349</p>
+        <h2>2. Look closer</h2><p>Notice how this color changes between light and shade.</p>
+        <div class="sketch">Sketch or write here</div><label><input type="checkbox"> I noticed something new</label></section><section><div class="swatch" style="background:#dcc590"></div>
+        <p class="meta">a golden shade · #dcc590</p>
+        <h2>3. Look closer</h2><p>Find a small detail you would usually walk past. Sketch its shape.</p>
+        <div class="sketch">Sketch or write here</div><label><input type="checkbox"> I noticed something new</label></section></div>
+    <footer>Colors are grouped locally with scikit-learn K-means, an open-source machine-learning algorithm.
+    The observation prompts are fixed text. This is color clustering, not object, plant or species identification.
+    Lighting and the chosen photo change the palette. No map, route or weather assessment is provided.
+    This card contains no source photo, filename, EXIF or location. No upload or network call occurs during analysis.
+    Demo tested on generated illustrations only; no outdoor user test or customer adoption is claimed.
+    Created with AI assistance.</footer></main></html>
